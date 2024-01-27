@@ -12,11 +12,11 @@ concurrence mode
 
 ## joblib_001.py
 
-Uses 'joblib' library to simulate multiple processing using
+Uses `joblib` library to simulate multiple processing using
 concurrence
 
 ## multiprocessing_001.py
 
-Uses 'multiprocessing' library to simulate multiple processing
+Uses `multiprocessing` library to simulate multiple processing
 using parallelism
 
