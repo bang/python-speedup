@@ -31,7 +31,7 @@ def get_processes():
 def process_all():
     """Parallelize all processes running"""
     process_ids_list = get_processes()
-    Parallel(n_jobs=PROCESS_RUNNING_PER_TIME, prefer='threads')(
+    Parallel(n_jobs=PROCESS_RUNNING_PER_TIME)(
         delayed(run_process)(item) for item in process_ids_list
     )
 
