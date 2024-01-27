@@ -33,6 +33,7 @@ def main():
     format_logging()
     logging.debug("Running all processes using multiprocessing")
     start = time.perf_counter()
+    # Pool with processes per time limited by the constant
     pool = Pool(PROCESS_RUNNING_PER_TIME)
     pool.map(run_process, get_processes())
     end = time.perf_counter()
