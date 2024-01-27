@@ -12,9 +12,17 @@
 
 
 # Formatting log CONSTANTS
-DATETIME_FMT = "%Y-%m-%d %H:%M:%S"
-FMT_STR = "%(asctime)s [%(levelname)s] - %(message)s"
+LOG_DATETIME_FMT = "%Y-%m-%d %H:%M:%S"
+LOG_FMT_STR = "%(asctime)s [%(levelname)s] - %(message)s"
 LOG_LEVEL = 'DEBUG'
 
 # Running config
-PROCESS_RUNNING_PER_TIME = 3
+PROCESS_RUNNING_PER_TIME = 5
+
+# HTTP sites
+HTTP_SITES = [
+    'https://www.google.com', 'https://www.amazon.com', 'https://www.github.com',
+    'https://uol.com.br', 'https://www.medium.com', 'https://www.wired.com',
+    'https://www.youtube.com', 'https://9gag.com', 'https://www.realpython.com',
+    'https://linkedin.com'
+]

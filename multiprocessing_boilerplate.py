@@ -2,12 +2,12 @@ import logging
 import time
 from time import sleep, perf_counter
 from multiprocessing import Pool
-from constants import DATETIME_FMT, FMT_STR, LOG_LEVEL, PROCESS_RUNNING_PER_TIME
+from constants import LOG_DATETIME_FMT, LOG_FMT_STR, LOG_LEVEL, PROCESS_RUNNING_PER_TIME
 
 
 def format_logging():
     """Creates a basic config for log using constants in 'constants.py' file"""
-    logging.basicConfig(format=FMT_STR, level=LOG_LEVEL, datefmt=DATETIME_FMT)
+    logging.basicConfig(format=LOG_FMT_STR, level=LOG_LEVEL, datefmt=LOG_DATETIME_FMT)
 
 
 def run_process(process_id):
