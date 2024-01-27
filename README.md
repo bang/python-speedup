@@ -3,7 +3,9 @@ Python speedup references
 
 # Configuration
 
-There is only the constant file(constants.py) to configurate
+There is only the constant file `constants.py` to configurate
+
+# Boilerplate examples
 
 ## async_001.py
 
@@ -20,3 +22,19 @@ concurrence
 Uses `multiprocessing` library to simulate multiple processing
 using parallelism
 
+# HTTP request examples
+
+# asyncio_http_requests.py
+
+Uses `asyncio` + `requests` to perform simple HTTP GET operations
+in multiple URLs
+
+# joblib_http_requests.py
+
+Uses `joblib` + `requests` to perform simple HTTP GET operations
+in multiple URLs
+
+# multiprocess_http_requests.py
+
+Uses `multiprocess` + `requests` to perform simple HTTP GET operations
+in multiple URLs
