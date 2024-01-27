@@ -20,7 +20,7 @@ LOG_LEVEL = 'DEBUG'
 PROCESS_RUNNING_PER_TIME = 5
 
 # HTTP sites
-HTTP_SITES = [
+URLS = [
     'https://www.google.com', 'https://www.amazon.com', 'https://www.github.com',
     'https://uol.com.br', 'https://www.medium.com', 'https://www.wired.com',
     'https://www.youtube.com', 'https://9gag.com', 'https://www.realpython.com',
