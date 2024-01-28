@@ -1,16 +1,12 @@
 import logging
 import requests
 from time import perf_counter
-from joblib import Parallel, delayed, Memory
-from constants import LOG_DATETIME_FMT, LOG_FMT_STR, LOG_LEVEL, PROCESS_RUNNING_PER_TIME, URLS
+from joblib import Parallel, delayed
+from constants import PROCESS_RUNNING_PER_TIME, URLS
+from log_utils import format_logging
 
 
-def format_logging():
-    """Creates a basic config for log using constants in 'constants.py' file"""
-    logging.basicConfig(format=LOG_FMT_STR, level=LOG_LEVEL, datefmt=LOG_DATETIME_FMT)
-
-
-def get_url(url):
+def get_all_urls(url):
     """Simulates a process running"""
     # It needs to be imported here because random is affected by global context
     from random import randint
@@ -25,9 +21,9 @@ def get_url(url):
 
 
 def process_all():
-    """Parallelize all processes running"""
+    """Parallelize all URL accesses"""
     Parallel(n_jobs=PROCESS_RUNNING_PER_TIME)(
-        delayed(get_url)(url) for url in URLS
+        delayed(get_all_urls)(url) for url in URLS
     )
 
 
