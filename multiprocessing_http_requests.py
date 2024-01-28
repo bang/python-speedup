@@ -4,15 +4,11 @@ import requests
 
 from time import perf_counter
 from multiprocessing import Pool
-from constants import LOG_DATETIME_FMT, LOG_FMT_STR, LOG_LEVEL, PROCESS_RUNNING_PER_TIME, URLS
+from constants import PROCESS_RUNNING_PER_TIME, URLS
+from log_utils import format_logging
 
 
-def format_logging():
-    """Creates a basic config for log using constants in 'constants.py' file"""
-    logging.basicConfig(format=LOG_FMT_STR, level=LOG_LEVEL, datefmt=LOG_DATETIME_FMT)
-
-
-def run_process(url):
+def get_all_urls(url):
     """Simulates a process running"""
     # It needs to be imported here because random is affected by global context
     from random import randint
@@ -31,7 +27,7 @@ def main():
     logging.debug("Running all processes using multiprocessing")
     start = time.perf_counter()
     pool = Pool(PROCESS_RUNNING_PER_TIME)
-    pool.map(run_process, URLS)
+    pool.map(get_all_urls, URLS)
     end = time.perf_counter()
     time_spent = end - start
     logging.debug(f"All processes ran using multiprocess was finished! Total time spent: {time_spent: .2f}")

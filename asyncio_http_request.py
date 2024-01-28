@@ -1,17 +1,16 @@
 import logging
 import asyncio
 import time
-
 import requests
 
-from constants import LOG_FMT_STR, LOG_DATETIME_FMT, LOG_LEVEL, URLS, PROCESS_RUNNING_PER_TIME
+from constants import URLS, PROCESS_RUNNING_PER_TIME
 from asyncio import Semaphore
 from log_utils import format_logging
 
 sem = Semaphore(PROCESS_RUNNING_PER_TIME)
 
 
-async def get_urls():
+async def get_all_urls():
     """Get URLS using asyncio and requests, limited by the semaphore"""
     async with sem:
         format_logging()
@@ -29,7 +28,7 @@ def main():
     format_logging()
     logging.debug(f"Running all requests using asyncio")
     start = time.perf_counter()
-    asyncio.run(get_urls())
+    asyncio.run(get_all_urls())
     end = time.perf_counter()
     time_spent = end - start
     logging.debug(f"Time spent for all requests using asyncio: {time_spent: .2f}")
