@@ -4,7 +4,7 @@ import time
 
 from random import randint
 from asyncio import Semaphore
-from constants import DATETIME_FMT, FMT_STR, LOG_LEVEL, PROCESS_RUNNING_PER_TIME
+from constants import LOG_DATETIME_FMT, LOG_FMT_STR, LOG_LEVEL, PROCESS_RUNNING_PER_TIME
 
 
 # Controls tasks per time through a generator
@@ -13,7 +13,7 @@ sem = Semaphore(PROCESS_RUNNING_PER_TIME)
 
 def format_logging():
     """Configures the logging instance"""
-    logging.basicConfig(format=FMT_STR, level=LOG_LEVEL, datefmt=DATETIME_FMT)
+    logging.basicConfig(format=LOG_FMT_STR, level=LOG_LEVEL, datefmt=LOG_DATETIME_FMT)
 
 
 def get_processes():
