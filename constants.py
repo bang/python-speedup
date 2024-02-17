@@ -17,4 +17,4 @@ FMT_STR = "%(asctime)s [%(levelname)s] - %(message)s"
 LOG_LEVEL = 'DEBUG'
 
 # Running config
-PROCESS_RUNNING_PER_TIME = 3
+PROCESS_RUNNING_PER_TIME = 11

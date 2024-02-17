@@ -1,22 +1,29 @@
-# python-speedup
-Python speedup references
+# Python-speedup
+References scripts using 
+parallelism and concurrence common Python 
+libs
 
 # Configuration
 
-There is only the constant file(constants.py) to configurate
+The `config.py` is a simple Python file to set some control variables
+which are valid for all example scripts.
 
 ## async_001.py
 
-Uses `asyncio` ecosystem to simulate multiple processings runnging in
-concurrence mode
+A simple processing simulator script 
+using `asyncio` lib.
 
 ## joblib_001.py
 
-Uses 'joblib' library to simulate multiple processing using
-concurrence
+The `joblib` lightweight library to perform
+parallel jobs with transparent cache and more!
+
+Check out the address bellow:
+
+https://joblib.readthedocs.io/en/stable/
 
 ## multiprocessing_001.py
 
-Uses 'multiprocessing' library to simulate multiple processing
-using parallelism
-
+A simple script using the native library
+`multiprocessing` starting processes from
+a object pool.
