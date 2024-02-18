@@ -20,10 +20,9 @@ lib
 
 ## joblib_boilerplate.py
 
-The `joblib` lightweight library to perform
-parallel jobs with transparent cache and more!
+A script using `joblib` for parallelize processing simulation.
 
-Check out the address bellow:
+More about `joblib` library:
 
 https://joblib.readthedocs.io/en/stable/
 
