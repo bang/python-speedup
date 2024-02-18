@@ -12,9 +12,20 @@
 
 
 # Formatting log CONSTANTS
-DATETIME_FMT = "%Y-%m-%d %H:%M:%S"
-FMT_STR = "%(asctime)s [%(levelname)s] - %(message)s"
+LOG_DATETIME_FMT = "%Y-%m-%d %H:%M:%S"
+LOG_FMT_STR = "%(asctime)s [%(levelname)s] - %(message)s"
 LOG_LEVEL = 'DEBUG'
 
 # Running config
-PROCESS_RUNNING_PER_TIME = 11
+PROCESS_RUNNING_PER_TIME = 4
+
+URLS = [
+    'https://www.google.com',
+    'https://www.medium.com',
+    'https://www.microsoft.com',
+    'https://www.ebay.com',
+    'https://www.aws.com',
+    'https://www.youtube.com',
+    'https://www.netflix.com',
+    'https://www.wired.com'
+]
