@@ -13,12 +13,12 @@ which are valid for all example scripts.
 A simple processing simulator script 
 using `asyncio` lib.
 
-## asyncio_http_request.py
+## [asyncio_http_request.py](https://github.com/bang/python-speedup/blob/master/multiprocessing_http_request.py)
 
 An example for how to use `asyncio` with `requests` 
 lib
 
-## joblib_boilerplate.py
+## [joblib_boilerplate.py](https://github.com/bang/python-speedup/blob/master/joblib_boilerplate.py)
 
 A script using `joblib` for parallelize processing simulation.
 
@@ -26,20 +26,20 @@ More about `joblib` library:
 
 https://joblib.readthedocs.io/en/stable/
 
-## joblib_http_request.py
+## [joblib_http_request.py](https://github.com/bang/python-speedup/blob/master/joblib_http_request.py)
 
 A script that uses `joblib` for 
 parallelize HTTP requests.
 
 
-## multiprocessing_001.py
+## [multiprocessing_boilerplate.py](https://github.com/bang/python-speedup/blob/master/multiprocessing_boilerplate.py)
 
 A simple script using the native library
 `multiprocessing` to execute parallel processes
 from a Pool.
 
 
-## multiprocessing_http_request.py
+## [multiprocessing_http_request.py](https://github.com/bang/python-speedup/blob/master/multiprocessing_http_request.py)
 
 A script that uses `multiprocessing` lib for 
 parallelize HTTP requests.
