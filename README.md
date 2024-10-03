@@ -8,7 +8,7 @@ libs
 The `config.py` is a simple Python file to set some control variables
 which are valid for all example scripts.
 
-## (asyncio_boilerplate.py) [https://github.com/bang/python-speedup/blob/master/asyncio_boilerplate.py]
+## [asyncio_boilerplate.py](https://github.com/bang/python-speedup/blob/master/asyncio_boilerplate.py)
 
 A simple processing simulator script 
 using `asyncio` lib.
